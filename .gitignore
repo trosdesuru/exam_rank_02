@@ -1,0 +1,14 @@
+so_long
+so_long_debug
+bin
+*.o
+*.a
+log
+a.out
+
+lib/mlx
+test
+
+.vscode
+
+.DS_Store
