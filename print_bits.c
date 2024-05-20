@@ -13,7 +13,7 @@ void    print_bits(unsigned char octet)
 		i--;
 	}
 }
-
+/*
 int     atoi(const char *str)
 {
 	int	nbr;
@@ -48,3 +48,4 @@ int main (int argc, char **argv)
 		}
 		return 0;
 }
+*/
