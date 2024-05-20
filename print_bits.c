@@ -14,7 +14,7 @@ void    print_bits(unsigned char octet)
 	}
 }
 
-/*int     atoi(const char *str)
+int     atoi(const char *str)
 {
 	int	nbr;
 	int sig;
@@ -37,8 +37,10 @@ void    print_bits(unsigned char octet)
 int main (int argc, char **argv)
 {
     unsigned char octet;
-		
-		if (argc == 2)
+
+		if (argc != 2)
+			return (write(1, "/n", 1));
+		else if (argc == 2)
 		{
 			octet = atoi(argv[1]);
 			print_bits(octet);
@@ -46,4 +48,3 @@ int main (int argc, char **argv)
 		}
 		return 0;
 }
-*/
