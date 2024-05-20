@@ -9,7 +9,7 @@ char  lib_strncpy(char *dst, const char *src, int n)
   *dst = '\0';
   return *dst;
 }
-
+/*
 int main(void)
 {
   char dst[16] = "Hello";
@@ -19,3 +19,4 @@ int main(void)
   printf("\nResult String: %s\n\n", dst);
   return (0);
 }
+*/
