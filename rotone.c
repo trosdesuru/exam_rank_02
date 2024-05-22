@@ -1,7 +1,7 @@
-//#include <stdio.h>
+// #include <stdio.h>
 #include <unistd.h>
 
-int main (int ac, char **av)
+int main(int ac, char **av)
 {
   char *str;
 
@@ -13,13 +13,13 @@ int main (int ac, char **av)
   str = av[1];
   while (*str)
   {
-    if ((*str >= 'a' && *str <= 'y')
-    || (*str >= 'A' && *str <= 'Y'))
+    if ((*str >= 'a' && *str <= 'y') ||
+    (*str >= 'A' && *str <= 'Y'))
     {
       *str += 1;
       write(1, str, 1);
     }
-      
+
     else if (*str == 'z' || *str == 'Z')
     {
       *str -= 25;
